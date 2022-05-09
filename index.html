@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> formulario </title>
+        <meta charset="uft-8">
+        <style>
+            body {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/ae/Atardecer_M%C3%A1laga_2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(245, 245, 248);
+            }
+            form {
+                border: 2px; solid red;
+                border-color: black;
+                background-color: rgb(0, 0, 0, 0.4);
+                width: 450px;
+                border-radius: 7%;
+                margin:auto;
+                padding: 10px 20px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="mi formulario" action="8" method="get">
+            ingrese su nombre:
+            <input type="text" name="nombre_usuario" size="25">
+            <br>
+            ingrese su edad:
+            <input type="number" name="edad_usuario" min="12" max="35">
+            <br>
+            selccione su division:
+            "A"<input type="radio" name="div" value="A">
+            "B"<input type="radio" name="div" value="B"> <checked>
+            "C"<input type="radio" name="div" value="C">
+            <br>
+            seleccione sus materias favoritas:
+            <br>
+            matematicas<input type="checkbox" name="curso" value="matematicas">
+            <br>
+            lengua<input type="checkbox" name="curso" value="lengua">
+            <br>
+            practicas profesionalizantes<input type="checkbox" name="curso" value="practicas profesionalizantes">
+            <br>
+            ingrese su direccion de facebook:
+            <input type="url" name="url_usuario">
+            <br>
+            ingrese su correo:
+            <input type="email" name="correo_usuario">
+            <br><input type="submit" value="enviar">
+            <input type="reset" value="restablecer">
+        </form>
+    </body>
+</html>
